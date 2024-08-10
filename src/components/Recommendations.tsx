@@ -30,7 +30,7 @@ const Recommendations: React.FC = () => {
           <img src={rec.image} alt={rec.title} />
           <h3>{rec.title}</h3>
           <p>{rec.description}</p>
-          <a href={rec.url}>Learn more</a>
+          <a href={rec.url}>Download</a>
         </div>
       ))}
     </div>
