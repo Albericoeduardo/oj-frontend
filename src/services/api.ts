@@ -4,7 +4,7 @@ const api = axios.create({
   baseURL: 'http://localhost:8080',
 });
 
-//recommendations
+//get recommendations
 export const getRecommendations = async () => {
   const response = await api.get('/recommendations');
   return response.data;
@@ -15,7 +15,7 @@ export const createRecommendation = async (recommendation: any) => {
   return response.data;
 };
 
-//projects
+//get projects
 export const getProjects = async () => {
   const response = await api.get('/projects');
   return response.data;
@@ -26,7 +26,7 @@ export const createProject = async (project: any) => {
   return response.data;
 };
 
-//news
+//get news
 export const getNews = async () => {
   const response = await api.get('/news');
   return response.data;
@@ -37,7 +37,7 @@ export const createNews = async (news: any) => {
   return response.data;
 };
 
-//team
+//get team
 export const getTeam = async () => {
   const response = await api.get('/team');
   return response.data;
