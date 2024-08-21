@@ -1,6 +1,9 @@
-import Navbar from '@/components/navbar/Navbar'
-import Team from '@/components/Team'
-import React from 'react'
+"use client";
+
+import Navbar from '@/components/navbar/Navbar';
+import Team from '@/components/Team';
+import React from 'react';
+import '../app/global.css';
 
 const team = () => {
   return (

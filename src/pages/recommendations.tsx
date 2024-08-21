@@ -3,8 +3,9 @@
 import React from 'react';
 import Recommendations from '../components/Recommendations';
 import Navbar from '@/components/navbar/Navbar';
+import '../app/global.css';
 
-const RecommendationsPage: React.FC = () => {
+const recommendations = () => {
   return (
     <div>
       <Navbar />
@@ -14,4 +15,4 @@ const RecommendationsPage: React.FC = () => {
   );
 };
 
-export default RecommendationsPage;
+export default recommendations;
