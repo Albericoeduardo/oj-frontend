@@ -1,11 +1,13 @@
+import Navbar from '@/components/navbar/Navbar'
 import Team from '@/components/Team'
 import React from 'react'
 
 const team = () => {
   return (
     <div>
-        <h1>All team</h1>
-        <Team />
+      <Navbar />
+      <h1>All team</h1>
+      <Team />
     </div>
   )
 }
