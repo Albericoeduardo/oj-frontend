@@ -8,9 +8,7 @@ const Home: React.FC = () => {
   return (
     <div className='min-h-screen overflow-hidden'>
       <Navbar />
-      <h1>Recommendation System</h1>
-      <CreateRecommendation />
-      <Recommendations />
+      <h1>OJ</h1>
     </div>
   );
 };
