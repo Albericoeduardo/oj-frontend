@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({
+export const api = axios.create({
   baseURL: 'http://localhost:8080',
 });
 
@@ -23,17 +23,6 @@ export const getProjects = async () => {
 
 export const createProject = async (project: any) => {
   const response = await api.post('/projects', project);
-  return response.data;
-};
-
-//get news
-export const getNews = async () => {
-  const response = await api.get('/news');
-  return response.data;
-};
-
-export const createNews = async (news: any) => {
-  const response = await api.post('/news', news);
   return response.data;
 };
 
