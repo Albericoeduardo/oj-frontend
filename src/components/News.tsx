@@ -1,7 +1,7 @@
 "use client";
 
-import { getNews } from '@/services/api';
 import React, { useEffect, useState } from 'react'
+import { getNews } from '@/services/newsService/newsService';
 
 interface News {
     id: number;
