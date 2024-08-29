@@ -8,8 +8,9 @@ export const getNews = async () => {
 export const createNews = async (news: any) => {
     const response = await api.post('/news', news, {
         headers: {
-            'Content-Type': 'application/json', // Especifica que o conteúdo é JSON
+            'Content-Type': 'application/json',
         },
     });
-    return response.data;
+    console.log(response.config.data);
+    return response.config.data;
 };
