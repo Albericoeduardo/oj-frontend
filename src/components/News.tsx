@@ -23,15 +23,24 @@ const News: React.FC = () => {
 
   return (
     <div>
-      {news.map((news) => (
-        <div key={news.id}>
-          <img src={news.image} alt={news.title} />
-          <h3>{news.title}</h3>
-          <p>{news.description}</p>
+      {news.map((item) => (
+        <div
+          key={item.id}
+          className="flex border rounded-lg shadow-md overflow-hidden bg-white my-4"
+        >
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-[140px] h-[130px] object-cover"
+          />
+          <div className="p-4 flex flex-col justify-center">
+            <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
+            <p className="text-sm text-gray-600">{item.description}</p>
+          </div>
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 export default News
