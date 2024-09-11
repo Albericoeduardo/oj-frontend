@@ -45,7 +45,7 @@ const CreateNews: React.FC = () => {
       const news = {
         title,
         description,
-        image: imageUrl,
+        imageUrl: imageUrl,
       };
 
       await createNews(news);
