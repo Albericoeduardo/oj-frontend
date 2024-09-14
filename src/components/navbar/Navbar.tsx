@@ -17,7 +17,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='flex flex-row justify-between items-center p-4'>
+        <nav className='fixed top-0 left-0 right-0 flex flex-row justify-between items-center p-4 z-50'>
             <h1 className='text-2xl font-bold underline underline-offset-8 decoration-blue-700 -rotate-2'>
                 OJ
             </h1>
