@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import './global.css';
-import HeroSection from '@/components/heroSection/HeroSection';
+import HeroSection from '@/components/homePage/heroSection/HeroSection';
 
 const Home: React.FC = () => {
   return (
