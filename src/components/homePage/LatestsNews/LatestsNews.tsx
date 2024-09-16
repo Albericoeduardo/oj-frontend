@@ -1,5 +1,6 @@
 import React from 'react'
-import NewsCard from './components/NewsCard'
+import Image from 'next/image'
+import Link from 'next/link';
 
 const LatestsNews = () => {
 
@@ -23,18 +24,21 @@ const LatestsNews = () => {
 
   return (
     <section className="bg-white py-12">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col items-center">
         <h2 className="text-4xl font-bold text-center mb-8 font-amatic">Notícias</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {newsData.map((news, index) => (
-            <NewsCard 
-              key={index}
-              imageUrl={news.imageUrl} 
-              description={news.description}
-              alt={news.alt}
-            />
-          ))}
+            {newsData.map((news, index) => (
+            <Link href={'/news'} key={index}>
+              <Image 
+                src={news.imageUrl}
+                alt={news.alt}
+                width={500}
+                height={300}
+              />
+              <p>{news.description}</p>
+            </Link>
+            ))}
         </div>
 
         <button className="mt-6 bg-black text-white py-2 px-6 rounded-lg hover:bg-gray-800 transition duration-300">
