@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section>
         <div
-            className='absolute inset-0 h-full w-full bg-fixed bg-cover bg-center'
+            className='relative inset-0 h-full w-full bg-fixed bg-cover bg-center'
             style={{
             backgroundImage: `url(${heroSectionImg})`,
             backgroundAttachment: 'fixed'
