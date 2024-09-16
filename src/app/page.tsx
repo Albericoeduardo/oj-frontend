@@ -4,6 +4,7 @@ import './global.css';
 import HeroSection from '@/components/homePage/heroSection/HeroSection';
 import LatestsNews from '@/components/homePage/LatestsNews/LatestsNews';
 import ProjectsSection from '@/components/homePage/projectsSection/projectsSection';
+import CarouselSection from '@/components/homePage/carouselSection/CarouselSection';
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <HeroSection></HeroSection>
       <LatestsNews></LatestsNews>
       <ProjectsSection></ProjectsSection>
+      <CarouselSection></CarouselSection>
     </div>
   );
 };
