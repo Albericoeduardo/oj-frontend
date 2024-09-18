@@ -82,6 +82,7 @@ const CarouselSection = () => {
             <span
                 key={index}
                 className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-white' : 'bg-gray-500'}`}
+                onClick={() => setCurrentSlide(index)}
             ></span>
             ))}
         </div>
